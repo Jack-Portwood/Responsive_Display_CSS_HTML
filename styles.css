@@ -78,14 +78,14 @@ iframe {
   height: 15em;
 }
 
- .card-image-container {
+.card-image-container {
   display: flex;
   justify-content: flex-end;
   border: 1px solid blue;
   height: 15em;
   width: 50em;
   background-image: url("https://source.unsplash.com/gpK9SOzNna0");
-} 
+}
 
 .time-stamp {
   /* border: 1px pink solid; */
@@ -94,21 +94,21 @@ iframe {
   margin: 0.5em;
   background-color: #f4f4f4;
   color: #184269;
-} 
+}
 
 .card-info-container {
   /* border: solid 1px seagreen; */
   background-color: #f4f4f4;
   height: 14em;
-} 
+}
 
 .card-title {
   /* border: goldenrod solid 1px; */
   margin: 0.5em;
   color: #184269;
-} 
+}
 
- .text {
+.text {
   /* border: solid 1px springgreen; */
   margin: 0.5em;
   font-size: 1em;
@@ -120,10 +120,9 @@ iframe {
   background-color: #184269;
   color: #f4f4f4;
   border-radius: 3px;
-} 
+}
 
-@media only screen and (max-width: 768px) {
-
+@media only screen and (max-width: 280px) {
   .main-container {
     display: flex;
     flex-flow: column wrap;
@@ -143,7 +142,6 @@ iframe {
   }
 
   .card-container {
-      flex-flow: column wrap;
     width: 20em;
     height: 30em;
   }
@@ -158,7 +156,4 @@ iframe {
     width: 25em;
     align-self: flex-end;
   }
-
-
-
-} 
+}
