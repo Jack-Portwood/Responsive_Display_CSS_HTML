@@ -129,11 +129,12 @@ iframe {
   border-radius: 3px;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 768px) {
 
   .main-container{
-    flex-direction: row;
-
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
   }
 
 }
