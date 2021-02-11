@@ -52,18 +52,24 @@ iframe {
 /* your styles here */
 
 .card-container {
+  display: inline-flex;
+  align-items: c;
   border: solid red 1px;
   width: 50%;
   height: 50%;
   margin: 2rem auto;
 }
 
-.card-image{
+.card-image-container {
   border: 1px solid blue;
-  height: 100%;
-  width: 50%;
+  height: 10em;
+  width: 50em;
 }
 
-.card-info{
+.card-info-container {
   border: solid 1px seagreen;
+}
+
+.text {
+  border: solid 1px springgreen;
 }
