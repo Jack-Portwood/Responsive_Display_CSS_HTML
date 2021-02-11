@@ -53,7 +53,6 @@ iframe {
 
 .card-container {
   display: inline-flex;
-  align-items: c;
   border: solid red 1px;
   width: 50%;
   height: 50%;
@@ -61,15 +60,48 @@ iframe {
 }
 
 .card-image-container {
+  display: flex;
+  justify-content: flex-end;
   border: 1px solid blue;
-  height: 10em;
+  height: 14em;
   width: 50em;
+  background-image: url("https://source.unsplash.com/gpK9SOzNna0");
+}
+
+.time-stamp {
+  /* border: 1px pink solid; */
+  width: 6em;
+  height: 1.5em;
+  margin: 0.5em;
+  background-color: #f4f4f4;
+  color:  #184269;
 }
 
 .card-info-container {
   border: solid 1px seagreen;
+  background-color: #f4f4f4;
+
+}
+
+.card-title {
+  /* border: goldenrod solid 1px; */
+  margin: 0.5em;
+  color: #184269;
+
 }
 
 .text {
-  border: solid 1px springgreen;
+  /* border: solid 1px springgreen; */
+  margin: 0.5em;
+  font-size: 1em;
+}
+
+.card-button {
+  margin-top: 1em;
+  margin-left: 0.5em;
+  background-color: #184269;
+  color: #f4f4f4;
+  border-radius: 3px
+  
+;
 }
