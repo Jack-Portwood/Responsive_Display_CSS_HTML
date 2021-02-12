@@ -67,7 +67,7 @@ iframe {
 .card-container {
   display: block;
   align-items: center;
-  /* border: solid black 1px; */
+  border: solid black 1px;
   width: 40em;
   height: 100vh;
   margin-top: 5em;
@@ -80,7 +80,7 @@ iframe {
   justify-content: flex-start;
   align-items: flex-end;
 
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
   height: 50em;
   width: 40em;
   background-image: url("https://source.unsplash.com/gpK9SOzNna0");
@@ -105,14 +105,14 @@ iframe {
 
 
 .card-info-container {
-  /* border: solid 1px seagreen; */
+  border: solid 1px seagreen;
   background: var(--color-secondary, white);
   height: 35vh;
 }
 
 
 .card-title {
-  /* border: goldenrod solid 1px; */
+  border: goldenrod solid 1px;
   color: #184269;
   font-size: 2.5em;
   margin-left: 1em;
@@ -120,7 +120,7 @@ iframe {
 }
 
 .text {
-  /* border: solid 1px springgreen; */
+  border: solid 1px springgreen;
   margin: 1em;
   font-size: 3em;
 }
@@ -145,23 +145,20 @@ iframe {
 
     
 
-@media only screen and (max-width: 600px){ 
+@media only screen and (min-width: 1024px){ 
+
   .card-container {
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center; */
+    display: flex;
+    width: 100vw;
+    height: 40vh;
   }
 
-
-  }
-  
-
-  /* .card-image-container {
-    height: 40em;
-    width: 40em;
+   .card-image-container {
+    height: 30em;
+    width: 30em;
   }
 
-   .time-stamp{
+    .time-stamp{
     width: 10em;
     height: 2em;
 
@@ -173,8 +170,8 @@ iframe {
   }
 
   .card-info-container {
-    height: 40em;
-  }
+    width: 50em;
+  } 
 
   .card-title{
     height: 1.5em;
@@ -189,8 +186,8 @@ iframe {
     height: 4em;
     width: 15em;
 
-  }
-  }  */
+  } 
+}
 
 
 
