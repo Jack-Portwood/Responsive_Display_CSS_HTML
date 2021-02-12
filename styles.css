@@ -59,15 +59,13 @@ iframe {
   justify-content: ceter;
   flex-flow: column;
   width: 100%;
-  border: red 1px solid;
+  /* border: red 1px solid; */
 }
-
-
 
 .card-container {
   display: block;
   align-items: center;
-  border: solid black 1px;
+  /* border: solid black 1px; */
   width: 40em;
   height: 100vh;
   margin-top: 5em;
@@ -77,18 +75,14 @@ iframe {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 50em;
-
-
 }
 
 .image {
   width: 39.9em;
   height: 50em;
-    border: solid black 1px;
-
-  
+  border: solid black 1px;
 }
 
 .time-stamp {
@@ -111,18 +105,18 @@ iframe {
 .card-info-container {
   border: solid 1px black;
   background: var(--color-secondary, white);
-  height: 35vh;
+  height: 45vh;
 }
 
 .card-title {
-  border: goldenrod solid 1px;
+  /* border: goldenrod solid 1px; */
   color: #184269;
   font-size: 2.5em;
   margin-left: 1em;
 }
 
 .text {
-  border: solid 1px springgreen;
+  /* border: solid 1px springgreen; */
   margin: 1em;
   font-size: 3em;
 }
@@ -156,11 +150,10 @@ iframe {
     width: 35vw;
   }
 
-  .image{
+  .image {
     height: 40vh;
     width: 35vw;
     border: solid 1px black;
-
   }
 
   .time-stamp {
@@ -183,5 +176,22 @@ iframe {
   }
 }
 
-@media only screen and(max-width: 411px) {
+@media only screen and (width: 1920px) {
+  .main-container {
+    flex-flow: row  wrap;
+  align-items: center; 
+  justify-content: space-between;
+  }
+
+  .card-container{
+    width: 30vw;
+  }
+
+  .card-image-container {
+    width: 10vw;
+  }
+
+    .card-info-container {
+      width: 25vw;
+}
 }
