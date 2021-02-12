@@ -135,6 +135,11 @@ iframe {
   background-color: yellow;
 }
 
+@media only screen and (max-width: 411px) {
+  .main-container {
+    background-color: chartreuse;
+  }
+}
 @media only screen and (min-width: 1024px) {
   .card-container {
     display: flex;
@@ -176,53 +181,49 @@ iframe {
   }
 }
 
-@media only screen and (width: 1920px) {
+@media only screen and (min-width: 1920px) {
   .main-container {
-    flex-flow: row  wrap;
-    align-items: flex-start; 
+    flex-flow: row wrap;
+    align-items: flex-start;
     justify-content: space-evenly;
   }
 
-  .card-container{
+  .card-container {
     width: 45em;
     height: 30em;
-
   }
   .card-image-container {
     width: 20em;
   }
 
-  .time-stamp{
+  .time-stamp {
     width: 8em;
     height: 1.5em;
   }
 
-  .time-stamp-text{
+  .time-stamp-text {
     font-size: 1em;
   }
 
-  .image{
+  .image {
     height: 24.2em;
     width: 20em;
   }
 
   .card-info-container {
     width: 30em;
-}
+  }
 
-  .card-title{
+  .card-title {
     width: 10em;
-}
+  }
 
-.text{
-  font-size: 1.5em;
-}
+  .text {
+    font-size: 1.5em;
+  }
 
-.card-button{
-  height: 3em;
-  width: 15em;
-
-}
-
-
+  .card-button {
+    height: 3em;
+    width: 15em;
+  }
 }
