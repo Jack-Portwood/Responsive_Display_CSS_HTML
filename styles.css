@@ -57,7 +57,6 @@ iframe {
   display: block;
   width: 100vw;
   /* height:100vh; */
-  background-color: chartreuse;
 }
 
 .card-container {
@@ -66,6 +65,7 @@ iframe {
   margin-top: 5em;
   margin-left: auto;
   margin-right: auto;
+  border: 1px red solid
 }
 
 .card-image-container {
@@ -79,7 +79,6 @@ iframe {
 .time-stamp {
   position: absolute;
   width: 6em;
-  height: 2em;
   bottom: 10px;
   left: 10px;
   background-color: #f4f4f4;
@@ -87,7 +86,7 @@ iframe {
 }
 
 .time-stamp-text {
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 .card-info-container {
@@ -96,31 +95,36 @@ iframe {
   height: 45vh;
   width: 90vw;
   border:  #f4f4f4 1px solid;
+  border: 1px green solid
+
 }
 
 .card-title {
   color: #184269;
-  font-size: 2.5em;
-  margin-left: 1em;
+  font-size: 1em;
+  margin-left: 10px;
 }
 
 .text {
   margin: 1em;
-  font-size: 3em;
+  font-size: 1em;
 }
 
 .card-button {
-  margin-left: 3em;
+  display: flex;
+  align-items: center;
   background-color: #184269;
   color: #f4f4f4;
   border-radius: 3px;
-  height: 5em;
-  width: 20em;
+  height: 2em;
+  width: 10em;
+  border: 3px #f4f4f4 solid;
 }
 
 .card-button svg {
   fill: var(--color-secondary, white);
-}
+  
+} 
 
 .card-button:hover {
   background-color: yellow;
