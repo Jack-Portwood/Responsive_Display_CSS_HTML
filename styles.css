@@ -49,15 +49,14 @@ iframe {
 }
 
 /* your styles here */
-
+/* main container to set rules for childern */
 .main-container {
   display: block;
-  width: 100vw;
-  /* height: 100vh; */
-  /* background-color: chartreuse; */
-  /* border: red 1px solid; */
+  width: 100%;
+  height: 100%;
 }
 
+/* contains the rules for an indivual card will between flex and block */
 .card-container {
   display: block;
   width: 90vw;
@@ -65,19 +64,20 @@ iframe {
   margin-bottom: 5em;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 4px 8px 20px;
+  
 
-  /* border: 1px red solid; */
 }
-
+/* cotainer for image to help with postioning and scaling of image */
 .card-image-container {
   position: relative;
   margin: 0;
 }
-
+/* image set to width 100% with no height to help with scaling and to stop image distortion */
 .image {
   width: 100%;
 }
-
+/* container for time staple set to flex display to allow postioning in screen sizes */
 .time-stamp {
   display: flex;
   justify-content: flex-start;
@@ -87,34 +87,43 @@ iframe {
   bottom: 0.5em;
   left: 0.5em;
 }
-
+/* contains all the rules which pretain to text and styling */
 .time-stamp-text {
   font-size: 0.9em;
   background-color: var(--color-secondary);
   color: var(--color-primary);
   text-align: center;
 }
-
+/* container for card infomation  */
 .card-info-container {
   display: block;
   background: white;
   width: 100%;
   margin: 0;
-}
 
+
+}
+/* wrapper contains the itmes of the card-info-con helps with keeping position of elements consistnt during scaling */
+.card-info-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+/* title for card and styling */
 .card-title {
   color: #184269;
   font-size: 1em;
   margin-left: 10px;
   padding-top: 1em;
 }
-
+/* text related to each card overflow applying to helop with largeer text */
 .text {
   margin: 1em;
   font-size: 1em;
+  height: 20vh;
   overflow: scroll;
 }
-
+/* card button rules and styling set to flex to help postion svg */
 .card-button {
   display: flex;
   align-items: center;
@@ -124,11 +133,15 @@ iframe {
   height: 2em;
   width: 10em;
   margin-left: 10px;
-}
+  margin-bottom: 1em;
 
+}
+/* svg on button and styling */
 .card-button svg {
   fill: var(--color-secondary, white);
 }
+
+/* key frame animation to bounce button */
 @keyframes bounce {
   0%,
   30%,
@@ -153,6 +166,7 @@ iframe {
   animation: bounce 1s;
 }
 
+/* media query for medium phone */
 @media only screen and (min-width: 375px) {
   .card-container {
     display: flex;
@@ -166,7 +180,7 @@ iframe {
   .time-stamp {
     justify-content: flex-end;
     align-items: flex-start;
-    top: 1.2em;
+    top: 1.6em;
     left: -0.5em;
     bottom: 0em;
   }
@@ -184,11 +198,17 @@ iframe {
     height: 15vh;
   }
 
+  .card-info-wrapper{
+  height: 100%;
+}
+
+  
+
   .card-button {
     width: 9em;
   }
 }
-
+/* media query tablet */
 @media only screen and (min-width: 768px) {
   .main-container {
     display: flex;
@@ -216,11 +236,17 @@ iframe {
   .card-info-container {
     width: 28vw;
   }
-}
 
+  .card-info-wrapper{
+  height: 46.5%;
+}
+}
+/* media query for large screen */
 @media only screen and (min-width: 1224px) {
   .main-container {
     flex-wrap: wrap;
+    justify-content: center;
+
   }
 
   .card-container {
@@ -235,6 +261,7 @@ iframe {
   .time-stamp {
     justify-content: flex-end;
     align-items: flex-start;
+    top: 2.5em;
     left: -0.5em;
   }
 
@@ -242,7 +269,15 @@ iframe {
     width: 60vw;
   }
 
+  .card-info-wrapper{
+  height: 100%;
+}
+
   .text {
-    height: 19vh;
+    height: 20vh;
+  }
+
+  .time-stamp-text{
+    font-size: 0.9em;
   }
 }
