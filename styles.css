@@ -52,10 +52,11 @@ iframe {
 
 .main-container {
   display: block;
+  /* height: 100%; */
+
   width: 100vw;
-  height: 100vh;
   /* background-color: chartreuse; */
-  border: red 1px solid;
+  /* border: red 1px solid; */
 }
 
 .card-container {
@@ -66,12 +67,14 @@ iframe {
   margin-left: auto;
   margin-right: auto;
 
-  border: 1px red solid;
+  /* border: 1px red solid; */
 }
 
 .card-image-container {
   position: relative;
   margin: 0;
+  /* border: 1px orange solid; */
+
 }
 
 .image {
@@ -79,10 +82,12 @@ iframe {
 }
 
 .time-stamp {
-  position: absolute;
-  width: 6em;
-  bottom: 10px;
-  left: 10px;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute; 
+  width: 100%;
+  /* bottom: 10px; 
+  left: 10px; */
   background-color: var(--color-secondary);
   color: #184269;
   text-align: center;
@@ -95,8 +100,8 @@ iframe {
 .card-info-container {
   display: block;
   background: white;
-  height: 45vh;
-  width: 90vw;
+  /* height: 100%; */
+  width: 100%;
   margin: 0;
 
 
@@ -108,14 +113,14 @@ iframe {
   color: #184269;
   font-size: 1em;
   margin-left: 10px;
+  padding-top: 1em;
 }
 
 .text {
   margin: 1em;
   font-size: 1em;
   
-
-
+  
 
 }
 
@@ -165,12 +170,11 @@ iframe {
 
   .card-container {
     display: flex;
-
     width: 90vw;
+    /* border: yellow 1px solid; */
   }
 
   .image {
-    /* height: 45vh; */
     width: 40vw;
   }
 
@@ -181,6 +185,7 @@ iframe {
     right: initial;
     top: 1.4em;
     left: 5em;
+    border: yellow;
   }
 
   .time-stamp-text {
@@ -188,8 +193,20 @@ iframe {
   }
 
   .card-info-container {
-    width: 50vw;
+    /* height: 33.5%; */
+    width: 60%;
+    /* border: 1px red solid; */
   }
+
+  .text{
+    font-size: 0.9em;
+  }
+
+  .card-button {
+  width: 9em;
+}
+
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -210,9 +227,16 @@ iframe {
     width: 28vw;
   }
 
+  /* .time-stamp{
+    width: 4em;
+    top: 1.4em;
+    left: 9em;
+
+  } */
+
+  
   .card-info-container {
     width: 28vw;
-    height: 30vh;
   }
 }
 
@@ -224,18 +248,19 @@ iframe {
 
   .card-container {
     display: flex;
-    width: 40vw;
+    width: 30vw;
     /* margin-right: 5em; */
+    border: 1px red solid;
   }
 
   .image {
-    width: 20vw;
+    width:15vw;
   }
 
   .time-stamp {
     width: 4em;
     top: 1.4em;
-    left: 10em;
+    left: 9em;
   }
 
   .time-stamp-text {
@@ -244,6 +269,9 @@ iframe {
 
   .card-info-container {
     border: 1px gold solid;
-    height: 40%;
+    width: 60vw;
+
   }
+
+  
 }
