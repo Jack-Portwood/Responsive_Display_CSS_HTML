@@ -53,9 +53,9 @@ iframe {
 .main-container {
   display: block;
   width: 100vw;
-  /* height:100vh;  */
+  height: 100vh;
   /* background-color: chartreuse; */
-  /* border: red 1px solid; */
+  border: red 1px solid;
 }
 
 .card-container {
@@ -85,6 +85,7 @@ iframe {
   left: 10px;
   background-color: var(--color-secondary);
   color: #184269;
+  text-align: center;
 }
 
 .time-stamp-text {
@@ -97,6 +98,7 @@ iframe {
   height: 45vh;
   width: 90vw;
   margin: 0;
+
 
   /* border:  #f4f4f4 1px solid; */
   /* border: 1px green solid */
@@ -111,6 +113,10 @@ iframe {
 .text {
   margin: 1em;
   font-size: 1em;
+  
+
+
+
 }
 
 .card-button {
@@ -127,10 +133,30 @@ iframe {
 .card-button svg {
   fill: var(--color-secondary, white);
 }
+@keyframes bounce {
+  0%, 30%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
 
 .card-button:hover {
-  background-color: yellow;
+  /* background-color: yellow; */
+  animation: bounce 1s;
+  /* opacity: 0.5; */
 }
+
+
 
 @media only screen and (min-width: 375px) {
   .main-container {
@@ -144,7 +170,7 @@ iframe {
   }
 
   .image {
-    height: 45vh;
+    /* height: 45vh; */
     width: 40vw;
   }
 
@@ -162,7 +188,7 @@ iframe {
   }
 
   .card-info-container {
-    width: 45vw;
+    width: 50vw;
   }
 }
 
@@ -175,18 +201,18 @@ iframe {
 
   .card-container {
     display: block;
-    width: 40vw;
+    width: 28vw;
     margin-right: 5em;
     margin-left: 5em;
   }
 
   .image {
-    height: 45vh;
+    width: 28vw;
   }
 
   .card-info-container {
-    width: 40vw;
-    height: 40vh;
+    width: 28vw;
+    height: 30vh;
   }
 }
 
@@ -198,12 +224,12 @@ iframe {
 
   .card-container {
     display: flex;
-    width: 30vw;
-    margin-right: 5em;
+    width: 40vw;
+    /* margin-right: 5em; */
   }
 
   .image {
-    width: 25vh;
+    width: 20vw;
   }
 
   .time-stamp {
@@ -217,7 +243,7 @@ iframe {
   }
 
   .card-info-container {
-    width: 20vw;
-    height: 45vh;
+    border: 1px gold solid;
+    height: 40%;
   }
 }
