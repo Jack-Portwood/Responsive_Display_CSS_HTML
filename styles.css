@@ -83,18 +83,21 @@ iframe {
 
 .time-stamp {
   display: flex;
-  justify-content: flex-end;
+  justify-content:flex-start ;
+  align-items:flex-end;
   position: absolute; 
   width: 100%;
-  /* bottom: 10px; 
-  left: 10px; */
-  background-color: var(--color-secondary);
-  color: #184269;
-  text-align: center;
+  bottom: 10px; 
+  margin-left: 0.5em;
 }
 
 .time-stamp-text {
   font-size: 0.9em;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  text-align: center;
+
+
 }
 
 .card-info-container {
@@ -173,19 +176,18 @@ iframe {
     width: 90vw;
     /* border: yellow 1px solid; */
   }
-
+ 
   .image {
     width: 40vw;
+
   }
 
   .time-stamp {
-    width: 4em;
-    position: absolute;
-    bottom: initial;
-    right: initial;
-    top: 1.4em;
-    left: 5em;
-    border: yellow;
+    justify-content:flex-end ;
+    align-items:flex-start;
+    top: 1.2em;
+    margin-left:0;
+    right: 0.5em;
   }
 
   .time-stamp-text {
@@ -227,12 +229,13 @@ iframe {
     width: 28vw;
   }
 
-  /* .time-stamp{
-    width: 4em;
-    top: 1.4em;
-    left: 9em;
-
-  } */
+  .time-stamp{
+    justify-content:flex-start ;
+    align-items:flex-end;
+    margin-left: 0.5em;
+   
+  
+} 
 
   
   .card-info-container {
@@ -250,27 +253,35 @@ iframe {
     display: flex;
     width: 30vw;
     /* margin-right: 5em; */
-    border: 1px red solid;
   }
 
   .image {
     width:15vw;
+
+
   }
+
+  
+
 
   .time-stamp {
-    width: 4em;
-    top: 1.4em;
-    left: 9em;
-  }
+    justify-content:flex-end ;
+    align-items:flex-start;
+    position: absolute;
+    margin-left: 0em;
+    right: 0.5em;
+        
 
+    
+
+  }
+/* 
   .time-stamp-text {
     font-size: 0.7em;
-  }
+  } */
 
   .card-info-container {
-    border: 1px gold solid;
     width: 60vw;
-
   }
 
   
