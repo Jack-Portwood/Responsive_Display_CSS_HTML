@@ -52,9 +52,8 @@ iframe {
 
 .main-container {
   display: block;
-  /* height: 100%; */
-
   width: 100vw;
+  /* height: 100vh; */
   /* background-color: chartreuse; */
   /* border: red 1px solid; */
 }
@@ -73,8 +72,6 @@ iframe {
 .card-image-container {
   position: relative;
   margin: 0;
-  /* border: 1px orange solid; */
-
 }
 
 .image {
@@ -83,12 +80,12 @@ iframe {
 
 .time-stamp {
   display: flex;
-  justify-content:flex-start ;
-  align-items:flex-end;
-  position: absolute; 
+  justify-content: flex-start;
+  align-items: flex-end;
+  position: absolute;
   width: 100%;
-  bottom: 10px; 
-  margin-left: 0.5em;
+  bottom: 0.5em;
+  left: 0.5em;
 }
 
 .time-stamp-text {
@@ -96,20 +93,13 @@ iframe {
   background-color: var(--color-secondary);
   color: var(--color-primary);
   text-align: center;
-
-
 }
 
 .card-info-container {
   display: block;
   background: white;
-  /* height: 100%; */
   width: 100%;
   margin: 0;
-
-
-  /* border:  #f4f4f4 1px solid; */
-  /* border: 1px green solid */
 }
 
 .card-title {
@@ -122,9 +112,7 @@ iframe {
 .text {
   margin: 1em;
   font-size: 1em;
-  
-  
-
+  overflow: scroll;
 }
 
 .card-button {
@@ -142,7 +130,10 @@ iframe {
   fill: var(--color-secondary, white);
 }
 @keyframes bounce {
-  0%, 30%, 60%, 100% {
+  0%,
+  30%,
+  60%,
+  100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
@@ -159,35 +150,25 @@ iframe {
 }
 
 .card-button:hover {
-  /* background-color: yellow; */
   animation: bounce 1s;
-  /* opacity: 0.5; */
 }
 
-
-
 @media only screen and (min-width: 375px) {
-  .main-container {
-    /* background-color: blue; */
-  }
-
   .card-container {
     display: flex;
     width: 90vw;
-    /* border: yellow 1px solid; */
   }
- 
+
   .image {
     width: 40vw;
-
   }
 
   .time-stamp {
-    justify-content:flex-end ;
-    align-items:flex-start;
+    justify-content: flex-end;
+    align-items: flex-start;
     top: 1.2em;
-    margin-left:0;
-    right: 0.5em;
+    left: -0.5em;
+    bottom: 0em;
   }
 
   .time-stamp-text {
@@ -195,27 +176,23 @@ iframe {
   }
 
   .card-info-container {
-    /* height: 33.5%; */
     width: 60%;
-    /* border: 1px red solid; */
   }
 
-  .text{
+  .text {
     font-size: 0.9em;
+    height: 15vh;
   }
 
   .card-button {
-  width: 9em;
-}
-
-
+    width: 9em;
+  }
 }
 
 @media only screen and (min-width: 768px) {
   .main-container {
     display: flex;
     flex-flow: wrap;
-    /* background-color: red; */
   }
 
   .card-container {
@@ -229,15 +206,13 @@ iframe {
     width: 28vw;
   }
 
-  .time-stamp{
-    justify-content:flex-start ;
-    align-items:flex-end;
-    margin-left: 0.5em;
-   
-  
-} 
+  .time-stamp {
+    justify-content: flex-start;
+    align-items: flex-end;
+    left: 0.5em;
+    bottom: 0.5em;
+  }
 
-  
   .card-info-container {
     width: 28vw;
   }
@@ -246,43 +221,28 @@ iframe {
 @media only screen and (min-width: 1224px) {
   .main-container {
     flex-wrap: wrap;
-    /* background-color: yellow; */
   }
 
   .card-container {
     display: flex;
     width: 30vw;
-    /* margin-right: 5em; */
   }
 
   .image {
-    width:15vw;
-
-
+    width: 15vw;
   }
-
-  
-
 
   .time-stamp {
-    justify-content:flex-end ;
-    align-items:flex-start;
-    position: absolute;
-    margin-left: 0em;
-    right: 0.5em;
-        
-
-    
-
+    justify-content: flex-end;
+    align-items: flex-start;
+    left: -0.5em;
   }
-/* 
-  .time-stamp-text {
-    font-size: 0.7em;
-  } */
 
   .card-info-container {
     width: 60vw;
   }
 
-  
+  .text {
+    height: 19vh;
+  }
 }
