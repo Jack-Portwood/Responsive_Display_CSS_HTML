@@ -174,13 +174,13 @@ iframe {
   }
 
   .image {
-    width: 40vw;
+    width: 41vw;
   }
 
   .time-stamp {
     justify-content: flex-end;
     align-items: flex-start;
-    top: 1.6em;
+    top: 8%;
     left: -0.5em;
     bottom: 0em;
   }
@@ -255,13 +255,13 @@ iframe {
   }
 
   .image {
-    width: 15vw;
+    width: 14vw;
   }
 
   .time-stamp {
     justify-content: flex-end;
     align-items: flex-start;
-    top: 2.5em;
+    top: 12%;
     left: -0.5em;
   }
 

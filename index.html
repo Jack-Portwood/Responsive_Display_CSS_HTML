@@ -1,3 +1,20 @@
+<!-- 
+  Reflection
+
+  1. This is the first time I have used the mobile first approach which was a revalation and something I plan to use more often.
+
+  2. I have a much better understanding of media queries.
+
+  3.This task has imporved my understanding of how to scale images and how to structure and position components more effectively. 
+
+  4. Doing this exercise has highlighted how much heavy lifting framework can do and how much I like being able to modularize css uisng Sass. 
+
+  5. Another take away is importance in being confident uisng html and css
+  away from framworks
+
+  6. I intended to implenet what I learnt from this exercise on my personal website. 
+ -->
+
 <html lang="en">
 
 <head>
@@ -27,7 +44,7 @@
 			<div class="card-container">
 				<!-- contianer for the image half of card and time stamp wrapped in figcaption -->
 				<div class="card-image-container">
-					<image class="image" src="https://source.unsplash.com/1rkJD9tom7g" />
+					<image class="image" alt="White cherry blossom against red sky" src="https://source.unsplash.com/1rkJD9tom7g" />
 					<figcaption class="time-stamp">
 						<Strong class="time-stamp-text">11 Feb 2021</Strong>
 					</figcaption>
@@ -36,9 +53,9 @@
 
 				<!-- contianer to organise information on card contains wrapper which itself contains title text and button -->
 				<div class="card-info-container">
-					<div class="card-info-wrapper">
-						<div class="card-title"><strong>White Cherry Blossom</Strong></div>
-						<cite class="text">White Cherry Blossom
+					<section class="card-info-wrapper">
+						<header class="card-title"><strong>White Cherry Blossom</Strong></header>
+						<article class="text">White Cherry Blossom
 							</br></br>
 							Behold the joy of spring,
 							</br></br>
@@ -47,13 +64,13 @@
 							For it will be over soon.
 							</br></br>
 							<i>Christopher Tye</i>
-						</cite>
+						</article>
 
 						<!--button with inline svg  -->
-						<button class="card-button"> <div class="card-text">Card Button</div> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 25 25">
+						<button class="card-button"> <div class="card-text">Card Button</div> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 25 25" aria-hidden="true">
           <path d="M10.477 0h-8.977l12.024 12-12.024 12h8.977l12.023-12z"/>
           </svg></button>
-					</div>
+					</section>
 				</div>
 
 			</div>
@@ -63,7 +80,7 @@
 
 				<!-- contianer for the image half of card and time stamp wrapped in figcaption -->
 				<div class="card-image-container">
-					<image class="image" src="https://source.unsplash.com/3Jy4JQMDIhI" />
+					<image class="image" alt="A burning camp fire" src="https://source.unsplash.com/3Jy4JQMDIhI" />
 					<figcaption class="time-stamp">
 						<Strong class="time-stamp-text">12 Feb 2021</Strong>
 					</figcaption>
@@ -73,10 +90,10 @@
 
 				<!-- contianer to organise information on card contains wrapper which itself contains title text and button -->
 				<div class="card-info-container">
-					<div class="card-info-wrapper">
+					<section class="card-info-wrapper">
 
-						<div class="card-title"><strong>Upon the Burning of Our House</Strong></div>
-						<cite class="text">That fearful sound of “fire” and “fire,”
+						<header class="card-title"><strong>Upon the Burning of Our House</Strong></header>
+						<article class="text">That fearful sound of “fire” and “fire,”
 							<br>
 							Let no man know is my Desire.
 							<br>
@@ -88,13 +105,13 @@
 							<br><br>
 							And not to leave me succourless …
 							<br><br>
-							<i>Anne Bradstreet</i></cite>
+							<i>Anne Bradstreet</i></article>
 
 						<!--button with inline svg  -->
-						<button class="card-button"><div class="card-text">Card Button</div> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 25 25">
+						<button class="card-button"><div class="card-text">Card Button</div> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 25 25" aria-hidden="true">
           <path d="M10.477 0h-8.977l12.024 12-12.024 12h8.977l12.023-12z"/>
           </svg></button>
-					</div>
+					</section>
 				</div>
 			</div>
 
@@ -104,7 +121,7 @@
 
 				<!-- contianer for the image half of card and time stamp wrapped in figcaption -->
 				<div class="card-image-container">
-					<image class="image" src="https://source.unsplash.com/fBhy71VEQQs" />
+					<image class="image" alt="A protest taking place near a bridge" src="https://source.unsplash.com/fBhy71VEQQs" />
 					<figcaption class="time-stamp">
 						<Strong class="time-stamp-text">13 Feb 2021</Strong>
 					</figcaption>
@@ -114,10 +131,10 @@
 
 				<!-- contianer to organise information on card contains wrapper which itself contains title text and button -->
 				<div class="card-info-container">
-					<div class="card-info-wrapper">
+					<section class="card-info-wrapper">
 
-						<div class="card-title"><strong>The New Colossus</Strong></div>
-						<cite class="text">
+						<header class="card-title"><strong>The New Colossus</Strong></header>
+						<article class="text">
 
 							Give me your tired, your poor,
 							<br>
@@ -129,12 +146,12 @@
 							<br>
               I lift my lamp beside the golden door!<br><br>
 							<i>Emma Lazarus</i>
-						</cite>
+						</article>
 						<!--button with inline svg  -->
-						<button class="card-button"> <div class="card-text">Card Button</div> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 25 25">
+						<button class="card-button"> <div class="card-text">Card Button</div> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 25 25" aria-hidden="true">
           <path d="M10.477 0h-8.977l12.024 12-12.024 12h8.977l12.023-12z"/>
           </svg></button>
-					</div>
+					</section>
 				</div>
 			</div>
 
@@ -144,7 +161,7 @@
 
 				<!-- contianer for the image half of card and time stamp wrapped in figcaption -->
 				<div class="card-image-container">
-					<image class="image" src="https://source.unsplash.com/zNGPmIVPQf4" />
+					<image class="image" alt=" Motorway at on a wet night" src="https://source.unsplash.com/zNGPmIVPQf4" />
 					<figcaption class="time-stamp">
 						<Strong class="time-stamp-text">14 Feb 2021</Strong>
 					</figcaption>
@@ -154,10 +171,11 @@
 
 				<!-- contianer to organise information on card contains wrapper which itself contains title text and button -->
 				<div class="card-info-container">
-					<div class="card-info-wrapper">
+					<section class="card-info-wrapper">
 
-						<div class="card-title"><strong>Glasgow</Strong></div>
-						<cite class="text">City! I am true son of thine;
+						<header class="card-title"><strong>Glasgow</Strong></header>
+						<article class="text">
+              City! I am true son of thine;
 							</br>
 							Ne’er dwelt I where great mornings shine
 							</br>
@@ -173,13 +191,13 @@
 							</br>
 							I hear the ebb and flow of streets …
 							</br></br>
-							<i>Alexander Smith</i></cite>
+							<i>Alexander Smith</i></article>
 
 						<!--button with inline svg  -->
-						<button class="card-button"> <div class="card-text">Card Button</div> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 25 25">
+						<button class="card-button"> <div class="card-text">Card Button</div> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 25 25" aria-hidden="true">
           <path d="M10.477 0h-8.977l12.024 12-12.024 12h8.977l12.023-12z"/>
           </svg></button>
-					</div>
+					</section>
 				</div>
 			</div>
 
@@ -189,7 +207,7 @@
 
 				<!-- contianer for the image half of card and time stamp wrapped in figcaption -->
 				<div class="card-image-container">
-					<image class="image" src="https://source.unsplash.com/-eb7gHTlIWE" />
+					<image class="image" alt="Ghostly apperition seen through back lit glass" src="https://source.unsplash.com/-eb7gHTlIWE" />
 					<figcaption class="time-stamp">
 						<Strong class="time-stamp-text">15 Feb 2021</Strong>
 					</figcaption>
@@ -199,11 +217,11 @@
 
 				<!-- contianer to organise information on card contains wrapper which itself contains title text and button -->
 				<div class="card-info-container">
-					<div class="card-info-wrapper">
+					<section class="card-info-wrapper">
 
 
-						<div class="card-title"><strong>The Apperition</Strong></div>
-						<cite class="text">When by thy scorn, O murd’ress, I am dead
+						<header class="card-title"><strong>The Apperition</Strong></header>
+						<article class="text">When by thy scorn, O murd’ress, I am dead
 							</br>
 							And that thou think’st thee free
 							</br>
@@ -213,13 +231,13 @@
 							</br>
 							And thee, feign’d vestal, in worse arms shall see ….
 							</br></br>
-							<i>John Donne</i></cite>
+							<i>John Donne</i></article>
 
 						<!--button with inline svg  -->
-						<button class="card-button"> <div class="card-text">Card Button</div> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 25 25">
+						<button class="card-button"> <div class="card-text">Card Button</div> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 25 25" aria-hidden="true">
           <path d="M10.477 0h-8.977l12.024 12-12.024 12h8.977l12.023-12z"/>
           </svg></button>
-					</div>
+					</section>
 				</div>
 			</div>
 
@@ -228,7 +246,7 @@
 
 				<!-- contianer for the image half of card and time stamp wrapped in figcaption -->
 				<div class="card-image-container">
-					<image class="image" src="https://source.unsplash.com/fl2Xkz-mR7c" />
+					<image class="image" alt="A collection of oranges in a netted bag" src="https://source.unsplash.com/fl2Xkz-mR7c" />
 					<figcaption class="time-stamp">
 						<Strong class="time-stamp-text">16 Feb 2021</Strong>
 					</figcaption>
@@ -238,10 +256,10 @@
 
 				<!-- contianer to organise information on card contains wrapper which itself contains title text and button -->
 				<div class="card-info-container">
-					<div class="card-info-wrapper">
+					<section class="card-info-wrapper">
 
-						<div class="card-title"><strong>The Orange</Strong></div>
-						<cite class="text">At lunchtime I bought a huge orange—
+						<header class="card-title"><strong>The Orange</Strong></header>
+						<article class="text">At lunchtime I bought a huge orange—
 							The size of it made us all laugh.
 							I peeled it and shared it with Robert and Dave—
 							They got quarters and I had a half.
@@ -259,13 +277,13 @@
 							I love you. I’m glad I exist.
 							<br>
 							<br>
-							<i>Wendy Cope</i></cite>
+							<i>Wendy Cope</i></article>
 
 						<!--button with inline svg  -->
-						<button class="card-button"> <div class="card-text">Card Button</div> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 25 25">
+						<button class="card-button"> <div class="card-text">Card Button</div> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 25 25" aria-hidden="true">
           <path d="M10.477 0h-8.977l12.024 12-12.024 12h8.977l12.023-12z"/>
           </svg></button>
-					</div>
+					</section>
 
 				</div>
 			</div>
