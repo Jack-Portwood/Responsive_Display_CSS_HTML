@@ -180,7 +180,7 @@ iframe {
   .time-stamp {
     justify-content: flex-end;
     align-items: flex-start;
-    top: 8%;
+    top: 11%;
     left: -0.5em;
     bottom: 0em;
   }
@@ -261,7 +261,7 @@ iframe {
   .time-stamp {
     justify-content: flex-end;
     align-items: flex-start;
-    top: 12%;
+    top: 10%;
     left: -0.5em;
   }
 
