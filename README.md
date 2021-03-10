@@ -19,6 +19,6 @@ Large Screen Display
 
 
 # Development Background 
-This project was a techincal examination. 
+This project was a techincal examination. Using HTML and CSS I was tasked with building a responsive display for an app which displayed data in a grid.
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/primate-test-1-qe53q2)
